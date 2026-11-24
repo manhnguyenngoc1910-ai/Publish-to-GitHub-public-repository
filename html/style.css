@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(135deg, #a8e0c8 0%, #56b38b 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Khung trắng chứa toàn bộ trang */
+.page {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 1000px;
+  padding: 40px 60px 30px;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Phần Header */
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.logo {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #69b99d;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 48px;
+}
+
+nav a {
+  font-family: 'Mulish', sans-serif;
+  font-size: 18px;
+  color: #1f1534;
+  text-decoration: none;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+
+nav a:hover,
+nav a:first-child {
+  font-weight: 700;
+  opacity: 1;
+}
+
+/* Phần Nội dung chính (Main) */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.copy {
+  max-width: 490px;
+}
+
+.copy h1 {
+  font-family: 'Mulish', sans-serif;
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 400;
+  color: #1f1534;
+  margin-bottom: 32px;
+}
+
+.copy h1 .accent {
+  color: #69b99d;
+  font-weight: 700;
+}
+
+.copy p {
+  font-size: 14px;
+  line-height: 28px;
+  color: #7d7987;
+  margin-bottom: 40px;
+}
+
+/* Nút bấm Start now */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #69b99d;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 14px 32px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: #549e84;
+}
+
+/* Hình ảnh minh họa bên phải */
+.art {
+  max-width: 400px;
+  height: auto;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+}
+
+/* Phần Footer */
+footer {
+  margin-top: 80px;
+  text-align: center;
+  font-size: 14px;
+  color: #1f1534;
+}
+
+footer a {
+  font-weight: 700;
+  color: #1f1534;
+  text-decoration: none;
+}
+
+/* Tối ưu cho màn hình nhỏ (Responsive) */
+@media (max-width: 768px) {
+  .page {
+    padding: 30px 24px;
+  }
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .copy h1 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .art {
+    max-width: 100%;
+  }
+}
